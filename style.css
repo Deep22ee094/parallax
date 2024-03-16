@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+#wrapper{
+    height:100vh;
+    overflow-x:hidden;
+    justify-content: center;
+    perspective:10px;
+}
+.container{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    transform-style:preserve-3d;
+    z-index:-1;
+}
+.background{
+    transform:translateZ(-40px) scale(5);
+}
+.foreground{
+    transform:translateZ(-10px) scale(1);
+    position:relative;
+    top:500px;
+    left:50px;
+    
+   
+}
+.background,.foreground{
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+}
+h1{
+    position:absolute;
+    font-size:10rem;
+    color:white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+    top:5rem;
+    left:50%;
+    transform: translateX(-50%);
+    letter-spacing: 4px;
+}
+section{
+    background-color: rgba(45,45,45);
+    color:white;
+    padding:5rem 0;
+
+}
+secHeading{
+    font-size:5rem;
+    padding:0 10rem;
+
+}
+.bg{
+    position:relative;
+    width:100%;
+    background-attachment: fixed;
+    background-position:center ;
+    background-size:cover;
+    height:500px;
+
+}
+.desc{
+    position:absolute;
+    background-color:white;
+    padding:0.5rem 2.5rem;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+    color:black;
+    font-size:3.5rem;
+    font-weight:600;
+}
+.bg1{
+    background-image:url(https://th.bing.com/th/id/OIP.Y2-T_0vMRnqrnuze8b99bwHaFj?pid=ImgDet&rs=1);
+}
+.bg2{
+    background-image: url(https://www.surfertoday.com/images/jamp/page/surfingsport.jpg);
+}
+.bg3{
+    background-image: url(https://th.bing.com/th/id/OIP.Xz-Pse-K-ICzLf5IocmSAQHaE8?w=242&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+}
